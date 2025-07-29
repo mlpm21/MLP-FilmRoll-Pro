@@ -1,2 +1,2 @@
-# cs361-A2-budget-manager
-Help people manage their budget in their daily life.
+# cs361-FilmRoll
+FilmRool online shop
