@@ -8,11 +8,19 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 
+
 <body>
 
   <header>
     <div class="logo">📷 <span class="highlight">MLP FilmRoll Pro</span></div>
-    <div class="cart-btn" onclick="toggleCart()">🛒 Cart <span id="cart-count">0</span></div>
+
+    <!-- FAQ: wrap header actions, FAQ button next to cart -->
+    <div class="right-actions">
+      <!-- FAQ: the “?” button -->
+      <button id="faq-btn" class="icon-btn" aria-haspopup="dialog" aria-controls="faq-panel" aria-label="Open FAQ">?</button>
+      <div class="cart-btn" onclick="toggleCart()">🛒 Cart <span id="cart-count">0</span></div>
+    </div>
+
   </header>
 
 
@@ -23,6 +31,10 @@
     <div class="search-bar">
       <input type="text" id="search-input" placeholder="Search by brand or ISO...">
       <button onclick="searchProducts()">Search</button>
+    </div>
+
+    <!-- FILTER: chip filter bar (type/brand/ISO) -->
+    <div id="filter-bar" class="filter-bar" aria-label="Filters">
     </div>
 
   </section>
@@ -38,13 +50,31 @@
     <h3>Shopping Cart</h3>
     <ul id="cart-items"></ul>
     <p class="total">Total: $<span id="cart-total">0.00</span></p>
-    
+
     <button class="checkout-btn">Checkout</button>
     <span class="close-btn" onclick="toggleCart()">×</span>
+
   </div>
 
+
+  <!-- FAQ: backdrop + slide-over panel -->
+  <div id="faq-backdrop" class="faq-backdrop" hidden></div>
+
+  <aside id="faq-panel" class="faq-panel" role="dialog" aria-modal="true" aria-labelledby="faq-title" hidden>
+    
+    <header class="faq-header">
+      <h2 id="faq-title">Help Center</h2>
+      <button id="faq-close" class="icon-btn" aria-label="Close FAQ">×</button>
+    </header>
+
+    <div id="faq-content" class="faq-content">
+      <div class="faq-loading" id="faq-loading">Loading…</div>
+      <div class="faq-list" id="faq-list" hidden></div>
+      <div class="faq-empty" id="faq-empty" hidden>No FAQs available.</div>
+    </div>
+
+  </aside>
+
   <script src="script.js"></script>
-
 </body>
-
 </html>
