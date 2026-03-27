@@ -61,19 +61,11 @@ FilmRoll Pro is a film photography supply shop built with vanilla JavaScript, HT
 **Responsive Flexbox**: Product grid uses `display: flex` with `flex-wrap: wrap` to automatically adapt layout based on available screen width.
 
 **Slide-over Panels**: Shopping cart and FAQ panels use CSS transforms and transitions for smooth slide-in/out animations from the right edge of the screen.
-```
 
-```
+
 Built e-commerce web application for film photography supplies featuring dynamic product catalog, real-time shopping cart management, and promotional pricing system with percentage discounts. Implemented multi-criteria filtering system using JavaScript Sets for brand and ISO rating filters, enabling users to combine multiple filter criteria. Developed responsive Flexbox layouts and slide-over UI panels with smooth animations.
-```
 
 
-```
-JavaScript (ES6+), HTML5, CSS3, Flexbox
-```
-
-
-```
 - Built e-commerce web application for film photography supplies featuring dynamic product catalog, real-time shopping cart management, and promotional pricing system with percentage discounts.
 
 - Implemented multi-criteria filtering system using JavaScript Sets for brand and ISO rating filters, enabling users to combine multiple filter criteria with active state indicators.
